@@ -1,0 +1,6 @@
+[submodule "gitlab-cli"]
+	path = gitlab-cli
+	url = git@github.com:bearded-giant/gitlab-cli.git
+[submodule "gitlab-monitor"]
+	path = gitlab-monitor
+	url = git@github.com:bearded-giant/gitlab-monitor.git

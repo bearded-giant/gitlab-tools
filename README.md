@@ -8,7 +8,9 @@ Command-line and TUI tools for GitLab pipeline monitoring and exploration.
 
 ## Tools
 
-### gitlab-cli
+This repository contains two GitLab tools as submodules:
+
+### [gitlab-cli](https://github.com/bearded-giant/gitlab-cli)
 Command-line interface for exploring GitLab pipelines, merge requests, and job statuses.
 
 - Lightweight with minimal dependencies
@@ -16,7 +18,7 @@ Command-line interface for exploring GitLab pipelines, merge requests, and job s
 - Pipeline progress tracking
 - Failed job analysis
 
-### gitlab-monitor
+### [gitlab-monitor](https://github.com/bearded-giant/gitlab-monitor)
 K9s-style Terminal User Interface for real-time pipeline monitoring.
 
 - Interactive navigation with arrow keys
@@ -26,6 +28,19 @@ K9s-style Terminal User Interface for real-time pipeline monitoring.
 
 ## Installation
 
+### Clone with Submodules
+
+```bash
+# Clone repository with submodules
+git clone --recursive https://github.com/bearded-giant/gitlab-tools.git
+
+# Or if already cloned
+git submodule init
+git submodule update
+```
+
+### Install Tools
+
 Both tools can be installed independently:
 
 ```bash
@@ -34,7 +49,7 @@ cd gitlab-cli
 pip install .
 
 # Install TUI monitor
-cd gitlab-monitor
+cd ../gitlab-monitor
 pip install .
 ```
 
@@ -58,28 +73,20 @@ gitlab-cli branch $(git branch --show-current)
 gitlab-monitor
 ```
 
-## Directory Structure
+## Updating Submodules
 
+To get the latest changes from the submodules:
+
+```bash
+git submodule update --remote --merge
 ```
-gitlab-tools/
-├── gitlab-cli/
-│   ├── gitlab_cli/
-│   │   ├── __init__.py
-│   │   ├── cli.py
-│   │   └── config.py
-│   ├── setup.py
-│   ├── requirements.txt
-│   └── README.md
-│
-└── gitlab-monitor/
-    ├── gitlab_monitor/
-    │   ├── __init__.py
-    │   ├── tui.py
-    │   └── config.py
-    ├── setup.py
-    ├── requirements.txt
-    └── README.md
-```
+
+## Contributing
+
+Each tool has its own repository. Please submit issues and pull requests to the respective repositories:
+
+- [gitlab-cli issues/PRs](https://github.com/bearded-giant/gitlab-cli)
+- [gitlab-monitor issues/PRs](https://github.com/bearded-giant/gitlab-monitor)
 
 ## License
 
