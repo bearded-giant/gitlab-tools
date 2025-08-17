@@ -3,7 +3,7 @@
 Command-line and TUI tools for GitLab pipeline monitoring and exploration.
 
 **Author:** BeardedGiant  
-**Repository:** https://github.com/bearded-giant/gitlab-tools  
+**Repository:** <https://github.com/bearded-giant/gitlab-tools>  
 **License:** Apache License 2.0
 
 ## Tools
@@ -11,6 +11,7 @@ Command-line and TUI tools for GitLab pipeline monitoring and exploration.
 This repository contains two GitLab tools as submodules:
 
 ### [gitlab-cli](https://github.com/bearded-giant/gitlab-cli)
+
 Command-line interface for exploring GitLab pipelines, merge requests, and job statuses.
 
 - Lightweight with minimal dependencies
@@ -19,6 +20,7 @@ Command-line interface for exploring GitLab pipelines, merge requests, and job s
 - Failed job analysis
 
 ### [gitlab-monitor](https://github.com/bearded-giant/gitlab-monitor)
+
 K9s-style Terminal User Interface for real-time pipeline monitoring.
 
 - Interactive navigation with arrow keys
@@ -85,11 +87,12 @@ git submodule update --remote --merge
 
 Each tool has its own repository. Please submit issues and pull requests to the respective repositories:
 
-- [gitlab-cli issues/PRs](https://github.com/bearded-giant/gitlab-cli)
-- [gitlab-monitor issues/PRs](https://github.com/bearded-giant/gitlab-monitor)
+- [gitlab-cli](https://github.com/bearded-giant/gitlab-cli)
+- [gitlab-monitor](https://github.com/bearded-giant/gitlab-monitor)
 
 ## License
 
-Copyright 2024 BeardedGiant
+Copyright 2025 BeardedGiant
 
 Licensed under the Apache License, Version 2.0. See LICENSE file for details.
+
