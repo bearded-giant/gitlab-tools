@@ -38,7 +38,10 @@ python test_cache.py          # cache performance
 python test_git_detection.py  # git remote URL parsing
 ```
 
-### gitlab-monitor has no automated tests
+### gitlab-monitor tests
+```bash
+cd gitlab-monitor && make test   # pytest via uv; test_*.py
+```
 
 ## Shared Configuration
 
@@ -69,6 +72,7 @@ Both support config files in `~/.config/<tool-name>/config.json`.
 - **Styling**: Catppuccin Mocha theme via Textual CSS
 - **Dependencies**: `python-gitlab>=3.0.0`, `textual>=0.41.0`, `rich>=13.0.0`
 - **Module layout**: `tui.py` (screens/app, ~4500 lines), `api.py` (`GitLabAPI`), `formatting.py` (Rich text/badge helpers), `config.py`, `constants.py`
+- **Background jobs**: `reviewd.py` (`glmon-reviewd`, review poller) and `jirad.py` (`glmon-jirad`, Jira ticket per MR); both run under launchd from `launchd/`
 
 ## Working with Submodules
 
